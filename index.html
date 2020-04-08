@@ -1,0 +1,2703 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CAS Miura</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen-a1ce949a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;java&quot;,&quot;javascript&quot;,&quot;csharp&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="java">Request Body</a>
+              <a href="#" data-language-name="javascript">Success Response</a>
+              <a href="#" data-language-name="csharp">Error Response</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#cas-miura" class="toc-h1 toc-link" data-title="CAS Miura">CAS Miura</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#url" class="toc-h2 toc-link" data-title="URL">URL</a>
+                  </li>
+                  <li>
+                    <a href="#estatus-de-usuarios" class="toc-h2 toc-link" data-title="Estatus de usuarios">Estatus de usuarios</a>
+                  </li>
+                  <li>
+                    <a href="#tipo-de-usuarios" class="toc-h2 toc-link" data-title="Tipo de usuarios">Tipo de usuarios</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#auth" class="toc-h1 toc-link" data-title="Auth">Auth</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#inicio-de-sesion" class="toc-h2 toc-link" data-title="Inicio de sesión">Inicio de sesión</a>
+                  </li>
+                  <li>
+                    <a href="#cerrar-sesion" class="toc-h2 toc-link" data-title="Cerrar sesión">Cerrar sesión</a>
+                  </li>
+                  <li>
+                    <a href="#actualiza-token-de-sesion" class="toc-h2 toc-link" data-title="Actualiza token de sesión">Actualiza token de sesión</a>
+                  </li>
+                  <li>
+                    <a href="#recuperar-contrasena" class="toc-h2 toc-link" data-title="Recuperar contraseña">Recuperar contraseña</a>
+                  </li>
+                  <li>
+                    <a href="#resetear-contrasena" class="toc-h2 toc-link" data-title="Resetear contraseña">Resetear contraseña</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#user" class="toc-h1 toc-link" data-title="User">User</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#registrar-usuarios-desde-cms" class="toc-h2 toc-link" data-title="Registrar usuarios desde CMS">Registrar usuarios desde CMS</a>
+                  </li>
+                  <li>
+                    <a href="#activa-codigo-de-registro" class="toc-h2 toc-link" data-title="Activa código de registro">Activa código de registro</a>
+                  </li>
+                  <li>
+                    <a href="#valida-codigo-de-registro" class="toc-h2 toc-link" data-title="Valida código de registro">Valida código de registro</a>
+                  </li>
+                  <li>
+                    <a href="#register-user-app" class="toc-h2 toc-link" data-title="Register user App">Register user App</a>
+                  </li>
+                  <li>
+                    <a href="#mostrar-perfil-logueado" class="toc-h2 toc-link" data-title="Mostrar perfil logueado">Mostrar perfil logueado</a>
+                  </li>
+                  <li>
+                    <a href="#mostrar-perfil" class="toc-h2 toc-link" data-title="Mostrar perfil">Mostrar perfil</a>
+                  </li>
+                  <li>
+                    <a href="#listado-usuarios-primarios" class="toc-h2 toc-link" data-title="Listado usuarios primarios">Listado usuarios primarios</a>
+                  </li>
+                  <li>
+                    <a href="#editar-usuario" class="toc-h2 toc-link" data-title="Editar usuario">Editar usuario</a>
+                  </li>
+                  <li>
+                    <a href="#deshabilitar-usuario" class="toc-h2 toc-link" data-title="Deshabilitar usuario">Deshabilitar usuario</a>
+                  </li>
+                  <li>
+                    <a href="#detalle-de-usuario" class="toc-h2 toc-link" data-title="Detalle de usuario">Detalle de usuario</a>
+                  </li>
+                  <li>
+                    <a href="#contactos-de-emergencia" class="toc-h2 toc-link" data-title="Contactos de emergencia">Contactos de emergencia</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#ubicaciones" class="toc-h1 toc-link" data-title="Ubicaciones">Ubicaciones</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#ultima-ubicacion" class="toc-h2 toc-link" data-title="Última ubicación">Última ubicación</a>
+                  </li>
+                  <li>
+                    <a href="#historial-de-ubicaciones" class="toc-h2 toc-link" data-title="Historial de ubicaciones">Historial de ubicaciones</a>
+                  </li>
+                  <li>
+                    <a href="#actualizar-ubicacion" class="toc-h2 toc-link" data-title="Actualizar ubicación">Actualizar ubicación</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#solicitudes-de-ayuda-app" class="toc-h1 toc-link" data-title="Solicitudes de ayuda App">Solicitudes de ayuda App</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#solicitud-de-ayuda" class="toc-h2 toc-link" data-title="Solicitud de ayuda">Solicitud de ayuda</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#push-notifications" class="toc-h1 toc-link" data-title="Push notifications">Push notifications</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#push-listado-cms" class="toc-h2 toc-link" data-title="Push listado CMS">Push listado CMS</a>
+                  </li>
+                  <li>
+                    <a href="#push-detail-cms" class="toc-h2 toc-link" data-title="Push detail CMS">Push detail CMS</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#alerts-app" class="toc-h1 toc-link" data-title="Alerts APP">Alerts APP</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#alerts-list" class="toc-h2 toc-link" data-title="Alerts list">Alerts list</a>
+                  </li>
+                  <li>
+                    <a href="#alert-modify-status" class="toc-h2 toc-link" data-title="Alert modify status">Alert modify status</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#staff" class="toc-h1 toc-link" data-title="Staff">Staff</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#staff-list" class="toc-h2 toc-link" data-title="Staff list">Staff list</a>
+                  </li>
+                  <li>
+                    <a href="#staff-creation" class="toc-h2 toc-link" data-title="Staff creation">Staff creation</a>
+                  </li>
+                  <li>
+                    <a href="#staff-update" class="toc-h2 toc-link" data-title="Staff update">Staff update</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='http://kokonutstudio.com/'>CAS Miura</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='cas-miura'>CAS Miura</h1>
+<p>Link al código fuente: <a href="https://github.com/KokonutStudioRepository/CAS_CMS_Backend">CAS Miura</a>.</p>
+<h2 id='url'>URL</h2>
+<table><thead>
+<tr>
+<th>Ambiente</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Desarrollo</td>
+<td>https://cas-dev-api.kokonutstudio.com</td>
+</tr>
+<tr>
+<td>QA</td>
+<td>https://cas-qa-api.kokonutstudio.com</td>
+</tr>
+<tr>
+<td>Pruebas Cliente</td>
+<td>NO DISPONIBLE AÚN</td>
+</tr>
+<tr>
+<td>Producción</td>
+<td>NO DISPONIBLE AÚN</td>
+</tr>
+</tbody></table>
+<h2 id='estatus-de-usuarios'>Estatus de usuarios</h2>
+<p>Se muestra listado de los estatus disponibles para un usuario.</p>
+
+<table><thead>
+<tr>
+<th>ID</th>
+<th>Estatus</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Activo</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Desactivado</td>
+</tr>
+</tbody></table>
+<h2 id='tipo-de-usuarios'>Tipo de usuarios</h2>
+<p>Se muestra listado de los tipos de usuarios.</p>
+
+<table><thead>
+<tr>
+<th>id</th>
+<th>Rol</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Usuario principal App</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Usuario secundario App</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Moderador CMS</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Admin CMS</td>
+</tr>
+</tbody></table>
+<h1 id='auth'>Auth</h1><h2 id='inicio-de-sesion'>Inicio de sesión</h2>
+<blockquote>
+<p>Inicio de sesión</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"example@testmail.com"</span><span class="o">,</span>
+    <span class="s">"password"</span><span class="o">:</span> <span class="s">"123Qwe1"</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"token_type"</span><span class="p">:</span> <span class="s2">"Bearer"</span><span class="p">,</span>
+        <span class="s2">"expires_in"</span><span class="p">:</span> <span class="mi">31622400</span><span class="p">,</span>
+        <span class="s2">"access_token"</span><span class="p">:</span> <span class="s2">"eyJ0eX..."</span><span class="p">,</span>
+        <span class="s2">"refresh_token"</span><span class="p">:</span> <span class="s2">"def50200ecbfff..."</span>
+        <span class="s2">"user_type"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El correo o contraseña son erroneos"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Usuario no registrado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Te hace falta información para iniciar sesión"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint inicia la sesión de un usuario y devuelve el Bearer token para futuras peticiones</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Login</td>
+<td>{{url}}/api/login</td>
+</tr>
+</tbody></table>
+<h3 id='header'>Header</h3>
+<p>No aplica.</p>
+<h3 id='body'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Descripción</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>Correo del usuario</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>password</td>
+<td>Contraseña del usuario</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='cerrar-sesion'>Cerrar sesión</h2>
+<blockquote>
+<p>Cerrar sesión:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Sesión cerrada correctamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint cierra la sesión de un usuario</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Logout</td>
+<td>{{url}}/api/oauth/logout</td>
+</tr>
+</tbody></table>
+<h3 id='headers'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-2'>Body</h3>
+<p>No requerido</p>
+<h2 id='actualiza-token-de-sesion'>Actualiza token de sesión</h2>
+<blockquote>
+<p>Actualiza token sesión:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"refresh_token"</span><span class="o">:</span> <span class="s">"def50200c22a902ff0b5e3ea..."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"token_type"</span><span class="p">:</span> <span class="s2">"Bearer"</span><span class="p">,</span>
+        <span class="s2">"expires_in"</span><span class="p">:</span> <span class="mi">31536000</span><span class="p">,</span>
+        <span class="s2">"access_token"</span><span class="p">:</span> <span class="s2">"eyJ0eXAiOiJ..."</span><span class="p">,</span>
+        <span class="s2">"refresh_token"</span><span class="p">:</span> <span class="s2">"def50200c..."</span><span class="p">,</span>
+        <span class="s2">"user_type"</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint actualiza el token de sesión</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Refresh token</td>
+<td>{{url}}/api/token</td>
+</tr>
+</tbody></table>
+<h3 id='headers-2'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-3'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Descripción</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>refresk_token</td>
+<td>Refresh token</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='recuperar-contrasena'>Recuperar contraseña</h2>
+<blockquote>
+<p>Recuperar contraseña:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"magdiel@kokonutstudio.com"</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se envió un correo de recuperación exitosamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint manda un correo al usuario que desea recuperar su contraseña</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Logout</td>
+<td>{{url}}/api/restore_password</td>
+</tr>
+</tbody></table>
+<h3 id='headers-3'>Headers</h3>
+<p>No requerido</p>
+<h3 id='body-4'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Descripción</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>Correo del usuario</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='resetear-contrasena'>Resetear contraseña</h2>
+<blockquote>
+<p>Resetear contraseña:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"password"</span><span class="o">:</span> <span class="s">"123Qwe1"</span><span class="o">,</span>
+    <span class="s">"password_confirmation"</span><span class="o">:</span> <span class="s">"123Qwe1"</span><span class="o">,</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se actualizó correctamente la contraseña"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint actualiza la nueva contraseña del usuario</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Reset pass</td>
+<td>{{url}}/api/reset_password</td>
+</tr>
+</tbody></table>
+<h3 id='headers-4'>Headers</h3>
+<p>No requerido</p>
+<h3 id='body-5'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Descripción</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>password</td>
+<td>New Password</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>password_confirmation</td>
+<td>New Password confirmation</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h1 id='user'>User</h1><h2 id='registrar-usuarios-desde-cms'>Registrar usuarios desde CMS</h2>
+<blockquote>
+<p>Registro de usuarios</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"example@testmail.com"</span><span class="o">,</span>
+    <span class="s">"code"</span><span class="o">:</span> <span class="s">"AS4QAD22"</span><span class="o">,</span>
+    <span class="s">"quantity"</span><span class="o">:</span> <span class="mi">3</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Usuario creado con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Correo electronico ya registrado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Hacen falta datos para completar el registro"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint registra un usuario principal desde el CMS.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Register</td>
+<td>{{url}}/api/oauth/users</td>
+</tr>
+</tbody></table>
+<h3 id='headers-5'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-6'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Descripción</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>Correo del usuario</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>code</td>
+<td>Contraseña del usuario</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Cantidad de usuarios que usarán el código</td>
+<td>Int</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='activa-codigo-de-registro'>Activa código de registro</h2>
+<blockquote>
+<p>Activa código de registro:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"code"</span><span class="o">:</span> <span class="s">"AS4QAD22"</span><span class="o">,</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"example@testmail.com"</span><span class="o">,</span>
+<span class="o">}</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Código validado correctamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="p">{</span>
+            <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"example@interphy.com"</span><span class="p">,</span>
+            <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-18 18:04:44"</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-18 18:04:44"</span><span class="p">,</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6I..."</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El uso de este código de invitación ha sido excedido el número de usuarios"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El código de invitación no es válido"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint valida un código de invitación y registra el correo del usuario. Regresa información del usuario que se acaba de registrar.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Activate code</td>
+<td>{{url}}/api/code_activation</td>
+</tr>
+</tbody></table>
+<h3 id='headers-6'>Headers</h3>
+<p>No requerido</p>
+<h3 id='body-7'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>email</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>code</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='valida-codigo-de-registro'>Valida código de registro</h2>
+<blockquote>
+<p>Valida código de registro:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"code"</span><span class="o">:</span> <span class="s">"AS4QAD22"</span>
+<span class="o">}</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Código validado correctamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">1</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El código de invitación no es válido"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint valida un código de invitación para proceder al registro.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Activate code</td>
+<td>{{url}}/api/code_validation</td>
+</tr>
+</tbody></table>
+<h3 id='headers-7'>Headers</h3>
+<p>No requerido</p>
+<h3 id='body-8'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='register-user-app'>Register user App</h2>
+<blockquote>
+<p>Register user App:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"code"</span><span class="o">:</span> <span class="s">"ABCDEF"</span><span class="o">,</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"roberto@kokonutstudio.com"</span><span class="o">,</span>
+    <span class="s">"name"</span><span class="o">:</span> <span class="s">"Magdiel"</span><span class="o">,</span>
+    <span class="s">"first_lastname"</span><span class="o">:</span> <span class="s">"Juarez"</span><span class="o">,</span>
+    <span class="s">"second_lastname"</span><span class="o">:</span> <span class="s">"Guerrero"</span><span class="o">,</span>
+    <span class="s">"birthdate"</span><span class="o">:</span> <span class="s">"1991-01-19"</span><span class="o">,</span>
+    <span class="s">"home_phone"</span><span class="o">:</span> <span class="s">"5512341234"</span><span class="o">,</span>
+    <span class="s">"cell_phone"</span><span class="o">:</span> <span class="s">"5512341234"</span><span class="o">,</span>
+    <span class="s">"password"</span><span class="o">:</span> <span class="s">"123Qwe1"</span><span class="o">,</span>
+    <span class="s">"emergency_contacts"</span><span class="o">:</span> <span class="o">[</span>
+        <span class="o">{</span>
+            <span class="s">"name"</span><span class="o">:</span> <span class="s">"Mom"</span><span class="o">,</span>
+            <span class="s">"first_lastname"</span><span class="o">:</span> <span class="s">"Jua"</span><span class="o">,</span>
+            <span class="s">"second_lastname"</span><span class="o">:</span> <span class="s">"Gue"</span><span class="o">,</span>
+            <span class="s">"cell_phone"</span><span class="o">:</span> <span class="s">"5512341234"</span><span class="o">,</span>
+            <span class="s">"job_phone"</span><span class="o">:</span> <span class="s">"5511111111"</span><span class="o">,</span>
+            <span class="s">"relationship"</span><span class="o">:</span> <span class="s">"mother"</span>
+        <span class="o">},</span> <span class="o">{</span>
+            <span class="s">"name"</span><span class="o">:</span> <span class="s">"Dad"</span><span class="o">,</span>
+            <span class="s">"first_lastname"</span><span class="o">:</span> <span class="s">"Jua"</span><span class="o">,</span>
+            <span class="s">"second_lastname"</span><span class="o">:</span> <span class="s">"Gue"</span><span class="o">,</span>
+            <span class="s">"cell_phone"</span><span class="o">:</span> <span class="s">"5512341234"</span><span class="o">,</span>
+            <span class="s">"job_phone"</span><span class="o">:</span> <span class="s">"5511111111"</span><span class="o">,</span>
+            <span class="s">"relationship"</span><span class="o">:</span> <span class="s">"father"</span>
+        <span class="o">}</span>
+    <span class="o">],</span>
+    <span class="s">"location"</span><span class="o">:</span> <span class="o">{</span>
+            <span class="s">"address"</span><span class="o">:</span> <span class="s">"Address"</span><span class="o">,</span>
+            <span class="s">"latitude"</span><span class="o">:</span> <span class="s">"00.00000"</span><span class="o">,</span>
+            <span class="s">"longitude"</span><span class="o">:</span> <span class="s">"00.00000"</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Usuario creado con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">1</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El código de invitación no es válido"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint valida un código de invitación para proceder al registro.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Activate code</td>
+<td>{{url}}/api/signup</td>
+</tr>
+</tbody></table>
+<h3 id='headers-8'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Content-Type</td>
+<td>application/json</td>
+</tr>
+<tr>
+<td>Accept</td>
+<td>application/json</td>
+</tr>
+</tbody></table>
+<h3 id='raw'>Raw</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>code</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>email</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>first_lastname</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>second_lastname</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>birthdate</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>home_phone</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>cell_phone</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>password</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>emergency_contacts *</td>
+<td>Array</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>location **</td>
+<td>Array</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h3 id='emergency_contacts'>*emergency_contacts</h3>
+<table><thead>
+<tr>
+<th>namespace</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>first_lastname</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>second_lastname</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>cell_phone</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>job_phone</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>relationship</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h3 id='location'>**location</h3>
+<table><thead>
+<tr>
+<th>namespace</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>address</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h3 id='tipo-de-tag-de-39-relationship-39-que-se-aceptan'>Tipo de tag de &#39;relationship&#39; que se aceptan</h3>
+<table><thead>
+<tr>
+<th>tag</th>
+<th>Rol</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>mother</td>
+<td>Madre</td>
+</tr>
+<tr>
+<td>father</td>
+<td>Padre</td>
+</tr>
+<tr>
+<td>son</td>
+<td>Hijo(a)</td>
+</tr>
+<tr>
+<td>brother</td>
+<td>Hermano(a)</td>
+</tr>
+<tr>
+<td>husband</td>
+<td>Esposo(a)</td>
+</tr>
+<tr>
+<td>other</td>
+<td>Otro</td>
+</tr>
+</tbody></table>
+<pre class="highlight plaintext"><code>{
+    "code": "ABCDEF",
+    "email": "roberto@kokonutstudio.com",
+    "name": "Magdiel",
+    "first_lastname": "Juarez",
+    "second_lastname": "Guerrero",
+    "birthdate": "1991-01-19",
+    "home_phone": "5512341234",
+    "cell_phone": "5512341234",
+    "password": "123Qwe1",
+    "emergency_contacts": [
+        {
+            "name": "Mom",
+            "first_lastname": "Jua",
+            "second_lastname": "Gue",
+            "cell_phone": "5512341234",
+            "job_phone": "5511111111",
+            "relationship": "mother"
+        }, {
+            "name": "Dad",
+            "first_lastname": "Jua",
+            "second_lastname": "Gue",
+            "cell_phone": "5512341234",
+            "job_phone": "5511111111",
+            "relationship": "father"
+        }
+    ],
+    "location": {
+            "address": "Address",
+            "latitude": "00.00000",
+            "longitude": "00.00000"
+    }
+}
+</code></pre><h2 id='mostrar-perfil-logueado'>Mostrar perfil logueado</h2>
+<blockquote>
+<p>Mostrar perfil logueado:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="c1">// No aplica</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de información exitosa"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6I..."</span><span class="p">,</span>
+        <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Interphy"</span><span class="p">,</span>
+        <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@interphysoft.com"</span><span class="p">,</span>
+        <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"status"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-25T17:28:08.000000Z"</span><span class="p">,</span>
+        <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint muestra la información básica del usuario logueado</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Show personal profile</td>
+<td>{{url}}/api/oauth/users/me</td>
+</tr>
+</tbody></table>
+<h3 id='headers-9'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-9'>Body</h3>
+<p>No requerido.</p>
+<h2 id='mostrar-perfil'>Mostrar perfil</h2>
+<blockquote>
+<p>Mostrar perfil:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="c1">// No aplica</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de información exitosa"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6I..."</span><span class="p">,</span>
+          <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Interphy"</span><span class="p">,</span>
+          <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@interphysoft.com"</span><span class="p">,</span>
+          <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 23:00:02"</span><span class="p">,</span>
+          <span class="s2">"deleted_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint muestra la información básica de un usuario respecto de su ID</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Show profile</td>
+<td>{{url}}/api/oauth/users/{encrypted_user_id}</td>
+</tr>
+</tbody></table>
+<h3 id='headers-10'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-10'>Body</h3>
+<p>No requerido.</p>
+<h2 id='listado-usuarios-primarios'>Listado usuarios primarios</h2>
+<blockquote>
+<p>Listado usuarios primarios:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="c1">// No aplica</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de información correcta"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"primary_user"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6I..."</span><span class="p">,</span>
+                <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Interphy"</span><span class="p">,</span>
+                <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@interphysoft.com"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 23:00:02"</span><span class="p">,</span>
+                <span class="s2">"deleted_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">"uuid"</span><span class="p">:</span> <span class="s2">"1ab09c0f-f911-4a05-ac35-c00284160447"</span>
+            <span class="p">},</span>
+            <span class="s2">"location"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="s2">"2"</span><span class="p">,</span>
+                <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.388235"</span><span class="p">,</span>
+                <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.163294"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"2ᵃ Cda. Concepción Beistegui 6, Narvarte Poniente, Benito Juárez, 03100 Ciudad de México, CDMX"</span><span class="p">,</span>
+                <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Software Company"</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">},</span>
+            <span class="s2">"secondary_users"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">"secondary_user"</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6I..."</span><span class="p">,</span>
+                        <span class="s2">"name"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@kokonutstudio.com"</span><span class="p">,</span>
+                        <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 23:07:58"</span><span class="p">,</span>
+                        <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-13 19:58:52"</span><span class="p">,</span>
+                        <span class="s2">"deleted_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="s2">"uuid"</span><span class="p">:</span> <span class="s2">"1ab09c0f-f911-4a05-ac35-c00284160447"</span>
+                    <span class="p">},</span>
+                    <span class="s2">"location"</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                        <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="s2">"3"</span><span class="p">,</span>
+                        <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.388235"</span><span class="p">,</span>
+                        <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.163294"</span><span class="p">,</span>
+                        <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"2ᵃ Cda. Concepción Beistegui 6, Narvarte Poniente, Benito Juárez, 03100 Ciudad de México, CDMX"</span><span class="p">,</span>
+                        <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Software Company"</span><span class="p">,</span>
+                        <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                        <span class="s2">"updated_at"</span><span class="p">:</span> <span class="kc">null</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">"primary_user"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6I..."</span><span class="p">,</span>
+                <span class="s2">"name"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@interphy.com"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-13 23:22:47"</span><span class="p">,</span>
+                <span class="s2">"deleted_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">1</span>
+            <span class="p">},</span>
+            <span class="s2">"location"</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+                <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="s2">"4"</span><span class="p">,</span>
+                <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.388235"</span><span class="p">,</span>
+                <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.163294"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"2ᵃ Cda. Concepción Beistegui 6, Narvarte Poniente, Benito Juárez, 03100 Ciudad de México, CDMX"</span><span class="p">,</span>
+                <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"Software Company"</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="kc">null</span>
+            <span class="p">},</span>
+            <span class="s2">"secondary_users"</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint lista los usarios primarios con sus respectivos usuarios secundarios, devuelve la información con IDs encryptados</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>List users</td>
+<td>{{url}}/api/oauth/users</td>
+</tr>
+</tbody></table>
+<h3 id='headers-11'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-11'>Body</h3>
+<p>No requerido.</p>
+<h2 id='editar-usuario'>Editar usuario</h2>
+<blockquote>
+<p>Editar usuario:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span><span class="o">,</span>
+    <span class="s">"name"</span><span class="o">:</span> <span class="s">"Interphy"</span><span class="o">,</span>
+    <span class="s">"first_lastname"</span><span class="o">:</span> <span class="kc">null</span><span class="o">,</span>
+    <span class="s">"second_lastname"</span><span class="o">:</span> <span class="kc">null</span><span class="o">,</span>
+    <span class="s">"birthdate"</span><span class="o">:</span> <span class="kc">null</span><span class="o">,</span>
+    <span class="s">"home_phone"</span><span class="o">:</span> <span class="kc">null</span><span class="o">,</span>
+    <span class="s">"cell_phone"</span><span class="o">:</span> <span class="kc">null</span><span class="o">,</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"magdiel@interphysoft.com"</span><span class="o">,</span>
+    <span class="s">"address"</span><span class="o">:</span> <span class="kc">null</span><span class="o">,</span>
+    <span class="s">"device_id"</span><span class="o">:</span> <span class="s">"89ABCDEF-01234567-89ABCDEF"</span><span class="o">,</span>
+    <span class="s">"firebase_token"</span><span class="o">:</span> <span class="s">"akdfbve82b4e..."</span><span class="o">,</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Información de usuario actualizada correctamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Error al obtener los contactos de emergencia"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El ID de usuario es inválido"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint actualizará la información de un usuario respecto de los parámetros en el Body de la petición</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Update profile</td>
+<td>{{url}}/api/oauth/update_user</td>
+</tr>
+</tbody></table>
+<h3 id='headers-12'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-12'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>first_lastname</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>second_lastname</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>birthdate</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>home_phone</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>cell_phone</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>email</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>address</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>device_id</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>firebase_token</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+</tbody></table>
+<h2 id='deshabilitar-usuario'>Deshabilitar usuario</h2>
+<blockquote>
+<p>Deshabilitar usuario:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Información de usuario actualizada correctamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Hubo un error al actualizar la información de usuario"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint habilitará/deshabilitará a un usuario</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Disable profile</td>
+<td>{{url}}/api/oauth/disable_user</td>
+</tr>
+</tbody></table>
+<h3 id='headers-13'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-13'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+</tbody></table>
+<h2 id='detalle-de-usuario'>Detalle de usuario</h2>
+<blockquote>
+<p>Detalle usuario:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Detalle de información realizada con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"primary_user"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6..."</span><span class="p">,</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Interphy"</span><span class="p">,</span>
+            <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@interphysoft.com"</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"status"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-25T17:28:08.000000Z"</span><span class="p">,</span>
+            <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"uuid"</span><span class="p">:</span> <span class="s2">"1ab09c0f-f911-4a05-ac35-c00284160447"</span><span class="p">,</span>
+            <span class="s2">"emergency_contacts"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alfa"</span><span class="p">,</span>
+                    <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="s2">"Beta"</span><span class="p">,</span>
+                    <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="s2">"Gama"</span><span class="p">,</span>
+                    <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="s2">"5511112222"</span><span class="p">,</span>
+                    <span class="s2">"job_phone"</span><span class="p">:</span> <span class="s2">"5511112222"</span><span class="p">,</span>
+                    <span class="s2">"relationship"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-18 20:09:42"</span><span class="p">,</span>
+                    <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-18 20:09:42"</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">"history_locations"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.396"</span><span class="p">,</span>
+                <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.1561"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.396"</span><span class="p">,</span>
+                <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.1561"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 14:55:39"</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">"id"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+                <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.396"</span><span class="p">,</span>
+                <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.1561"</span><span class="p">,</span>
+                <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 16:55:39"</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">"secondary_users"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">"secondary_user"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"id"</span><span class="p">:</span> <span class="s2">"eyJpdiI6In..."</span><span class="p">,</span>
+                    <span class="s2">"name"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"birthdate"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"home_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"email"</span><span class="p">:</span> <span class="s2">"magdiel@kokonutstudio.com"</span><span class="p">,</span>
+                    <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"status"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12T23:07:58.000000Z"</span><span class="p">,</span>
+                    <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-13T19:58:52.000000Z"</span><span class="p">,</span>
+                    <span class="s2">"login_status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"cat_type_user_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+                    <span class="s2">"uuid"</span><span class="p">:</span> <span class="s2">"1ab09c0f-f911-4a05-ac35-c00284160447"</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="s2">"last_location"</span><span class="p">:</span> <span class="p">{</span>
+                    <span class="s2">"id"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+                    <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">8</span><span class="p">,</span>
+                    <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"0"</span><span class="p">,</span>
+                    <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"0"</span><span class="p">,</span>
+                    <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"Address"</span><span class="p">,</span>
+                    <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                    <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-03-17 22:56:20"</span><span class="p">,</span>
+                    <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-03-17 22:56:20"</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Hubo un error al actualizar la información de usuario"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint mostrará la información de un usuario, usuarios de emergencia, su última ubicación y un listado de sus respectivos usuarios secundarios, cada uno con su última ubicación.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Disable profile</td>
+<td>{{url}}/api/oauth/detail_primary</td>
+</tr>
+</tbody></table>
+<h3 id='headers-14'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-14'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+</tbody></table>
+<h2 id='contactos-de-emergencia'>Contactos de emergencia</h2>
+<blockquote>
+<p>Contactos de emergencia:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Usuarios obtenidos con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"Alfa"</span><span class="p">,</span>
+            <span class="s2">"first_lastname"</span><span class="p">:</span> <span class="s2">"Beta"</span><span class="p">,</span>
+            <span class="s2">"second_lastname"</span><span class="p">:</span> <span class="s2">"Gama"</span><span class="p">,</span>
+            <span class="s2">"cell_phone"</span><span class="p">:</span> <span class="s2">"5511112222"</span><span class="p">,</span>
+            <span class="s2">"job_phone"</span><span class="p">:</span> <span class="s2">"5511112222"</span><span class="p">,</span>
+            <span class="s2">"relationship"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-18 20:09:42"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-18 20:09:42"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint mostrará la información de los contactos de emergencia respecto del ID   de un usuario</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Emergency contacts</td>
+<td>{{url}}/api/oauth/emergency_contact</td>
+</tr>
+</tbody></table>
+<h3 id='headers-15'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-15'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+</tbody></table>
+<h1 id='ubicaciones'>Ubicaciones</h1><h2 id='ultima-ubicacion'>Última ubicación</h2>
+<blockquote>
+<p>Última ubicación:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de información correcta"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+        <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.395965"</span><span class="p">,</span>
+        <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.156067"</span><span class="p">,</span>
+        <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+        <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span><span class="p">,</span>
+        <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint regresará la última ubicación registrada de un usuario respecto de su ID</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Last ubication</td>
+<td>{{url}}/api/oauth/last_location</td>
+</tr>
+</tbody></table>
+<h3 id='headers-16'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-16'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+</tbody></table>
+<h2 id='historial-de-ubicaciones'>Historial de ubicaciones</h2>
+<blockquote>
+<p>Historial de ubicaciones:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de información correcta"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.395965"</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.156067"</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+            <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.395965"</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.156067"</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 16:55:39"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"fk_users_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"19.395965"</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-99.156067"</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 14:55:39"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-02-12 17:55:39"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint regresará el historial de ubicaciones registradas de un usuario respecto de su ID</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>History ubication</td>
+<td>{{url}}/api/oauth/history_location</td>
+</tr>
+</tbody></table>
+<h3 id='headers-17'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-17'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+</tbody></table>
+<h2 id='actualizar-ubicacion'>Actualizar ubicación</h2>
+<blockquote>
+<p>Actualizar ubicación:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span><span class="o">,</span>
+    <span class="s">"latitude"</span><span class="o">:</span> <span class="s">"00.000000"</span><span class="o">,</span>
+    <span class="s">"longitude"</span><span class="o">:</span> <span class="s">"00.00000."</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+<span class="p">{</span>
+      <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se actualizó la ubicación con éxito"</span><span class="p">,</span>
+      <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+  <span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint actualiza la última ubicación del usuario. Además de esto, agrega al historial la anterior ubicación.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Update ubication</td>
+<td>{{url}}/api/oauth/update_location</td>
+</tr>
+</tbody></table>
+<h3 id='headers-18'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-18'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h1 id='solicitudes-de-ayuda-app'>Solicitudes de ayuda App</h1><h2 id='solicitud-de-ayuda'>Solicitud de ayuda</h2>
+<blockquote>
+<p>Solicitud de ayuda:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span><span class="o">,</span>
+    <span class="s">"type_alert"</span><span class="o">:</span> <span class="s">"A"</span><span class="o">,</span>
+    <span class="s">"title"</span><span class="o">:</span> <span class="s">"Title"</span>
+    <span class="s">"description"</span><span class="o">:</span> <span class="s">"Description"</span>
+    <span class="s">"latitude"</span><span class="o">:</span> <span class="s">"00.00000."</span>
+    <span class="s">"longitude"</span><span class="o">:</span> <span class="s">"00.00000."</span>
+    <span class="s">"address"</span><span class="o">:</span> <span class="s">"Address"</span><span class="o">,</span>
+    <span class="s">"to_all"</span><span class="o">:</span> <span class="mi">1</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code>
+<span class="p">{</span>
+      <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se actualizó la ubicación con éxito"</span><span class="p">,</span>
+      <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+  <span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint lanza una solicitud SOS desde la aplicación al CMS.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Solicitudes SOS</td>
+<td>{{url}}/api/oauth/new_push</td>
+</tr>
+</tbody></table>
+<h3 id='headers-19'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-19'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+<tr>
+<td>type_alert</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>address</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>to_all</td>
+<td>Boolean</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h1 id='push-notifications'>Push notifications</h1><h2 id='push-listado-cms'>Push listado CMS</h2>
+<blockquote>
+<p>Push listado:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de alertas exitosa"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"fk_user_sender"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"type_alert"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"title"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-03-03 19:17:24"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-03-03 19:17:24"</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="kc">null</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Falló la consulta de alertas"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint listará todas las push notifications</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Push list</td>
+<td>{{url}}/api/oauth/alerts</td>
+</tr>
+</tbody></table>
+<h3 id='headers-20'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-20'>Body</h3>
+<p>No requerido</p>
+<h2 id='push-detail-cms'>Push detail CMS</h2>
+<blockquote>
+<p>Push detail:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de alerta exitosa"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">"alert"</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"fk_user_sender"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"type_alert"</span><span class="p">:</span> <span class="s2">"A"</span><span class="p">,</span>
+            <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"description"</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-03-03 19:17:24"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-03-03 19:17:24"</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"address"</span>
+        <span class="p">},</span>
+        <span class="s2">"detail_alert"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">"id_send_to"</span><span class="p">:</span> <span class="s2">"eyJpdiI6Il..."</span><span class="p">,</span>
+                <span class="s2">"send_to"</span><span class="p">:</span> <span class="s2">"Interphy  "</span><span class="p">,</span>
+                <span class="s2">"status"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"created_at"</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+                <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-03-06T16:45:17.000000Z"</span>
+            <span class="p">}</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Consulta de alerta fallida"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint mostrará información detallada de una notificación y los usuarios a los que fué enviada.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Push detail</td>
+<td>{{url}}/api/oauth/alerts/{alert_id}</td>
+</tr>
+</tbody></table>
+<h3 id='headers-21'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-21'>Body</h3>
+<p>No requerido</p>
+<h1 id='alerts-app'>Alerts APP</h1><h2 id='alerts-list'>Alerts list</h2>
+<blockquote>
+<p>Alerts list:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Consulta de alertas exitosa"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"fk_user_sender"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"type_alert"</span><span class="p">:</span> <span class="s2">"A"</span><span class="p">,</span>
+            <span class="s2">"title"</span><span class="p">:</span> <span class="s2">"title"</span><span class="p">,</span>
+            <span class="s2">"description"</span><span class="p">:</span> <span class="s2">"description"</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-03-03 19:17:24"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-03-03 19:17:24"</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"address"</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint listará las notificaciones que le hayan llegado aun usuario en la aplicación.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Push detail</td>
+<td>{{url}}/api/oauth/mobile_alerts</td>
+</tr>
+</tbody></table>
+<h3 id='headers-22'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-22'>Body</h3>
+<p>No requerido</p>
+<h2 id='alert-modify-status'>Alert modify status</h2>
+<blockquote>
+<p>Alert modify status:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se actualizó la alerta móvil con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint deshabilitará una solicitud de ayuda enviada desde el móvil</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Alert modify status</td>
+<td>{{url}}/api/oauth/disable_mobilealert/{alert_id}</td>
+</tr>
+</tbody></table>
+<h3 id='headers-23'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-23'>Body</h3>
+<p>No requerido</p>
+<h1 id='staff'>Staff</h1><h2 id='staff-list'>Staff list</h2>
+<blockquote>
+<p>Staff list:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se actualizó la alerta móvil con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint lista el equipo de staff en el CMS.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>Staff list</td>
+<td>{{url}}/api/oauth/staff</td>
+</tr>
+</tbody></table>
+<h3 id='headers-24'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-24'>Body</h3>
+<p>No requerido</p>
+<h2 id='staff-creation'>Staff creation</h2>
+<blockquote>
+<p>Staff creation:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"name"</span><span class="o">:</span> <span class="s">"Name"</span><span class="o">,</span>
+    <span class="s">"first_lastname"</span><span class="o">:</span> <span class="s">"Lastname 1"</span><span class="o">,</span>
+    <span class="s">"second_lastname"</span><span class="o">:</span> <span class="s">"Lastname 2"</span><span class="o">,</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"email@xample.com"</span><span class="o">,</span>
+    <span class="s">"password"</span><span class="o">:</span> <span class="s">"123Qwe1"</span><span class="o">,</span>
+    <span class="s">"type_user_id"</span><span class="o">:</span> <span class="mi">3</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Creación de usuario staff exitoso"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint crea un nuevo usuario del equipo de staff en CMS.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Staff creation</td>
+<td>{{url}}/api/oauth/staff</td>
+</tr>
+</tbody></table>
+<h3 id='headers-25'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-25'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>first_lastname</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>second_lastname</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>email</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>password</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>cat_type_user_id</td>
+<td>Int</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h2 id='staff-update'>Staff update</h2>
+<blockquote>
+<p>Staff update:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"staff_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6Ik1..."</span><span class="o">,</span>
+    <span class="s">"name"</span><span class="o">:</span> <span class="s">"Name"</span><span class="o">,</span>
+    <span class="s">"first_lastname"</span><span class="o">:</span> <span class="s">"Lastname 1"</span><span class="o">,</span>
+    <span class="s">"second_lastname"</span><span class="o">:</span> <span class="s">"Lastname 2"</span><span class="o">,</span>
+    <span class="s">"email"</span><span class="o">:</span> <span class="s">"email@xample.com"</span><span class="o">,</span>
+    <span class="s">"type_user_id"</span><span class="o">:</span> <span class="mi">3</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Actualización de usuario staff exitoso"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint actualiza un usuario del equipo de staff desde CMS</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Staff update</td>
+<td>{{url}}/api/oauth/update_staff</td>
+</tr>
+</tbody></table>
+<h3 id='headers-26'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-26'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>staff_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>first_lastname</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>second_lastname</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>email</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>password</td>
+<td>String</td>
+<td>Opcional</td>
+</tr>
+<tr>
+<td>cat_type_user_id</td>
+<td>Int</td>
+<td>Opcional</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="java">Request Body</a>
+                <a href="#" data-language-name="javascript">Success Response</a>
+                <a href="#" data-language-name="csharp">Error Response</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

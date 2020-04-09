@@ -1357,19 +1357,16 @@ longitude             | String | Obligatorio
 
 
 # Solicitudes de ayuda App
-## Solicitud de ayuda
-> Solicitud de ayuda:
+## Solicitud SOS
+> Solicitud SOS:
 
 ```java
 {
-    "user_id": "eyJpdiI6I...",
-    "type_alert": "A",
-    "title": "Title"
-    "description": "Description"
-    "latitude": "00.00000."
-    "longitude": "00.00000."
-    "address": "Address",
-    "to_all": 1
+    "fk_user_id": "eyJpdiI6I...",
+    "address": "Some Address",
+    "latitude": "00.00000.",
+    "longitude": "00.00000.",
+    "status": 1
 }
 ```
 ```javascript
@@ -1387,11 +1384,11 @@ longitude             | String | Obligatorio
     "data": []
 }
 ```
-Este endpoint lanza una solicitud SOS desde la aplicación al CMS.
+Este endpoint lanza una solicitud SOS desde la aplicación para el CMS.
 
 HTTP Request  | Name Endpoint       |  Endpoint
 --------------|---------------------|----------------------
-POST          | Solicitudes SOS     | {{url}}/api/oauth/new_alert_sos
+POST          | Solicitud SOS       | {{url}}/api/oauth/new_alert_sos
 
 ### Headers
 Key           | Value
@@ -1401,14 +1398,11 @@ Authorization | Bearer eyJ0eXAiOiJKV1Q...
 ### Body
 Key                | Type     | Mandatory
 -------------------|----------|----------
-user_id            | String   | Obligatorio (Encrypted)
-type_alert         | String   | Obligatorio
-title              | String   | Obligatorio
-description        | String   | Obligatorio
+fk_user_id         | String   | Obligatorio (Encrypted)
+address            | String   | Opcional
 latitude           | String   | Obligatorio
 longitude          | String   | Obligatorio
-address            | String   | Obligatorio
-to_all             | Boolean  | Obligatorio
+status             | Boolean  | Obligatorio
 
 
 
@@ -1419,6 +1413,7 @@ to_all             | Boolean  | Obligatorio
 # Push notifications
 ##Nueva push desde CMS
 > Nueva push:
+
 ```java
 {
     "type_alert": "A",

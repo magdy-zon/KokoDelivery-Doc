@@ -310,7 +310,7 @@
             <a href="#solicitudes-de-ayuda-app" class="toc-h1 toc-link" data-title="Solicitudes de ayuda App">Solicitudes de ayuda App</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#solicitud-de-ayuda" class="toc-h2 toc-link" data-title="Solicitud de ayuda">Solicitud de ayuda</a>
+                    <a href="#solicitud-sos" class="toc-h2 toc-link" data-title="Solicitud SOS">Solicitud SOS</a>
                   </li>
               </ul>
           </li>
@@ -2124,19 +2124,16 @@
 <td>Obligatorio</td>
 </tr>
 </tbody></table>
-<h1 id='solicitudes-de-ayuda-app'>Solicitudes de ayuda App</h1><h2 id='solicitud-de-ayuda'>Solicitud de ayuda</h2>
+<h1 id='solicitudes-de-ayuda-app'>Solicitudes de ayuda App</h1><h2 id='solicitud-sos'>Solicitud SOS</h2>
 <blockquote>
-<p>Solicitud de ayuda:</p>
+<p>Solicitud SOS:</p>
 </blockquote>
 <pre class="highlight java tab-java"><code><span class="o">{</span>
-    <span class="s">"user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span><span class="o">,</span>
-    <span class="s">"type_alert"</span><span class="o">:</span> <span class="s">"A"</span><span class="o">,</span>
-    <span class="s">"title"</span><span class="o">:</span> <span class="s">"Title"</span>
-    <span class="s">"description"</span><span class="o">:</span> <span class="s">"Description"</span>
-    <span class="s">"latitude"</span><span class="o">:</span> <span class="s">"00.00000."</span>
-    <span class="s">"longitude"</span><span class="o">:</span> <span class="s">"00.00000."</span>
-    <span class="s">"address"</span><span class="o">:</span> <span class="s">"Address"</span><span class="o">,</span>
-    <span class="s">"to_all"</span><span class="o">:</span> <span class="mi">1</span>
+    <span class="s">"fk_user_id"</span><span class="o">:</span> <span class="s">"eyJpdiI6I..."</span><span class="o">,</span>
+    <span class="s">"address"</span><span class="o">:</span> <span class="s">"Some Address"</span><span class="o">,</span>
+    <span class="s">"latitude"</span><span class="o">:</span> <span class="s">"00.00000."</span><span class="o">,</span>
+    <span class="s">"longitude"</span><span class="o">:</span> <span class="s">"00.00000."</span><span class="o">,</span>
+    <span class="s">"status"</span><span class="o">:</span> <span class="mi">1</span>
 <span class="o">}</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code>
 <span class="p">{</span>
@@ -2150,7 +2147,7 @@
     <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
 <span class="p">}</span>
 </code></pre>
-<p>Este endpoint lanza una solicitud SOS desde la aplicación al CMS.</p>
+<p>Este endpoint lanza una solicitud SOS desde la aplicación para el CMS.</p>
 
 <table><thead>
 <tr>
@@ -2161,7 +2158,7 @@
 </thead><tbody>
 <tr>
 <td>POST</td>
-<td>Solicitudes SOS</td>
+<td>Solicitud SOS</td>
 <td>{{url}}/api/oauth/new_alert_sos</td>
 </tr>
 </tbody></table>
@@ -2186,24 +2183,14 @@
 </tr>
 </thead><tbody>
 <tr>
-<td>user_id</td>
+<td>fk_user_id</td>
 <td>String</td>
 <td>Obligatorio (Encrypted)</td>
 </tr>
 <tr>
-<td>type_alert</td>
+<td>address</td>
 <td>String</td>
-<td>Obligatorio</td>
-</tr>
-<tr>
-<td>title</td>
-<td>String</td>
-<td>Obligatorio</td>
-</tr>
-<tr>
-<td>description</td>
-<td>String</td>
-<td>Obligatorio</td>
+<td>Opcional</td>
 </tr>
 <tr>
 <td>latitude</td>
@@ -2216,52 +2203,41 @@
 <td>Obligatorio</td>
 </tr>
 <tr>
-<td>address</td>
-<td>String</td>
-<td>Obligatorio</td>
-</tr>
-<tr>
-<td>to_all</td>
+<td>status</td>
 <td>Boolean</td>
 <td>Obligatorio</td>
 </tr>
 </tbody></table>
 <h1 id='push-notifications'>Push notifications</h1><h2 id='nueva-push-desde-cms'>Nueva push desde CMS</h2>
 <blockquote>
-<p>Nueva push:
-<code>java
-{
-    &quot;type_alert&quot;: &quot;A&quot;,
-    &quot;fk_user_sender&quot;: &quot;eyJpdiI6I..&quot;,
-    &quot;title&quot;: &quot;Title&quot;,
-    &quot;description&quot;: &quot;Some description&quot;,
-    &quot;latitude&quot;: &quot;00.000000&quot;,
-    &quot;longitude&quot;: &quot;00.000000&quot;,
-    &quot;address&quot;: &quot;Some address description&quot;,
-    &quot;to_all&quot;: 1
-}
-</code>
-<code>javascript
-{
-    &quot;success&quot;: 1,
-    &quot;message&quot;: &quot;Push enviada correctamente&quot;,
-    &quot;data&quot;: []
-}
-</code>
-<code>csharp
-{
-    &quot;success&quot;: 0,
-    &quot;message&quot;: &quot;No estás logueado&quot;,
-    &quot;data&quot;: []
-}
-{
-    &quot;success&quot;: 0,
-    &quot;message&quot;: &quot;Falló la generación de push&quot;,
-    &quot;data&quot;: []
-}
-</code></p>
+<p>Nueva push:</p>
 </blockquote>
-
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"type_alert"</span><span class="o">:</span> <span class="s">"A"</span><span class="o">,</span>
+    <span class="s">"fk_user_sender"</span><span class="o">:</span> <span class="s">"eyJpdiI6I.."</span><span class="o">,</span>
+    <span class="s">"title"</span><span class="o">:</span> <span class="s">"Title"</span><span class="o">,</span>
+    <span class="s">"description"</span><span class="o">:</span> <span class="s">"Some description"</span><span class="o">,</span>
+    <span class="s">"latitude"</span><span class="o">:</span> <span class="s">"00.000000"</span><span class="o">,</span>
+    <span class="s">"longitude"</span><span class="o">:</span> <span class="s">"00.000000"</span><span class="o">,</span>
+    <span class="s">"address"</span><span class="o">:</span> <span class="s">"Some address description"</span><span class="o">,</span>
+    <span class="s">"to_all"</span><span class="o">:</span> <span class="mi">1</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Push enviada correctamente"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Falló la generación de push"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
 <p>Este endpoint enviará push notifications a los usuarios correspondientes</p>
 
 <table><thead>

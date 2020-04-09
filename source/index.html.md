@@ -1391,7 +1391,7 @@ Este endpoint lanza una solicitud SOS desde la aplicación al CMS.
 
 HTTP Request  | Name Endpoint       |  Endpoint
 --------------|---------------------|----------------------
-POST          | Solicitudes SOS     | {{url}}/api/oauth/new_push
+POST          | Solicitudes SOS     | {{url}}/api/oauth/new_alert_sos
 
 ### Headers
 Key           | Value
@@ -1428,7 +1428,7 @@ to_all             | Boolean  | Obligatorio
     "latitude": "00.000000",
     "longitude": "00.000000",
     "address": "Some address description",
-    "to_all": 1,
+    "to_all": 1
 }
 ```
 ```javascript

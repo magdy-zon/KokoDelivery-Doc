@@ -1364,8 +1364,8 @@ longitude             | String | Obligatorio
 {
     "fk_user_id": "eyJpdiI6I...",
     "address": "Some Address",
-    "latitude": "00.00000.",
-    "longitude": "00.00000.",
+    "latitude": "00.000000",
+    "longitude": "00.000000",
     "status": 1
 }
 ```

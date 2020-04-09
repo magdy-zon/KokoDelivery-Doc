@@ -1356,7 +1356,6 @@ longitude             | String | Obligatorio
 
 
 
-
 # Solicitudes de ayuda App
 ## Solicitud de ayuda
 > Solicitud de ayuda:
@@ -1415,7 +1414,75 @@ to_all             | Boolean  | Obligatorio
 
 
 
+
+
 # Push notifications
+##Nueva push desde CMS
+> Nueva push:
+```java
+{
+    "type_alert": "A",
+    "fk_user_sender": "eyJpdiI6I..",
+    "title": "Title",
+    "description": "Some description",
+    "latitude": "00.000000",
+    "longitude": "00.000000",
+    "address": "Some address description",
+    "to_all": 1,
+}
+```
+```javascript
+{
+    "success": 1,
+    "message": "Push enviada correctamente",
+    "data": []
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+{
+    "success": 0,
+    "message": "Falló la generación de push",
+    "data": []
+}
+```
+
+Este endpoint enviará push notifications a los usuarios correspondientes
+
+HTTP Request  | Name Endpoint       |  Endpoint
+--------------|---------------------|----------------------
+POST          | New Push            | {{url}}/api/oauth/new_push
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+Key                | Type     | Mandatory
+-------------------|----------|----------
+user_id            | String   | Obligatorio (Encrypted)
+type_alert         | String   | Obligatorio
+title              | String   | Opcional
+description        | String   | Opcional
+latitude           | String   | Obligatorio
+longitude          | String   | Obligatorio
+address            | String   | Opcional
+to_all             | Boolean  | Obligatorio
+
+
+
+
+
+
+
+
+
+
 ## Push listado CMS
 > Push listado:
 

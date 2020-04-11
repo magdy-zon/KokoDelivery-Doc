@@ -1362,11 +1362,9 @@ longitude             | String | Obligatorio
 
 ```java
 {
-    "fk_user_id": "eyJpdiI6I...",
     "address": "Some Address",
     "latitude": "00.000000",
     "longitude": "00.000000",
-    "status": 1
 }
 ```
 ```javascript
@@ -1398,11 +1396,9 @@ Authorization | Bearer eyJ0eXAiOiJKV1Q...
 ### Body
 Key                | Type     | Mandatory
 -------------------|----------|----------
-fk_user_id         | String   | Obligatorio (Encrypted)
 address            | String   | Opcional
 latitude           | String   | Obligatorio
 longitude          | String   | Obligatorio
-status             | Boolean  | Obligatorio
 
 
 
@@ -1849,3 +1845,45 @@ second_lastname     | String   | Opcional
 email               | String   | Opcional
 password            | String   | Opcional
 cat_type_user_id    | Int      | Opcional
+
+
+
+
+
+
+
+
+## Staff delete
+> Staff delete:
+
+```java
+No requerido
+```
+```javascript
+{
+    "success": 1,
+    "message": "Se ha eliminado el personal del staff",
+    "data": null
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+```
+
+Este endpoint elimina un usuario del equipo de staff desde CMS
+
+HTTP Request  | Name Endpoint       |  Endpoint
+--------------|---------------------|----------------------
+DELETE        | Staff Delete        | {{url}}/api/oauth/staff/{encrypted_staff_id}
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+No requerido

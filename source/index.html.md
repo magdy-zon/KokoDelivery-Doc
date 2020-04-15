@@ -1419,7 +1419,8 @@ longitude          | String   | Obligatorio
     "latitude": "00.000000",
     "longitude": "00.000000",
     "address": "Some address description",
-    "to_all": 1
+    "to_all": 1,
+    "date_event": "2020-01-01 00:00:00"
 }
 ```
 ```javascript
@@ -1464,6 +1465,7 @@ latitude           | String   | Obligatorio
 longitude          | String   | Obligatorio
 address            | String   | Opcional
 to_all             | Boolean  | Obligatorio
+date_event         | Datetime | Obligatory
 
 
 

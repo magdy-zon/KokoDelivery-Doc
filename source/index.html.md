@@ -1402,7 +1402,9 @@ longitude          | String   | Obligatorio
 
 
 
-Además de lo anterior, este endpoint generará una notificación (Websocket) al CMS con la siguiente información del usuario que lanza la notificación:
+Además de lo anterior, este endpoint generará una notificación (Websocket) al CMS con la siguiente información del usuario que lanzó la notificación: <Enter>
+
+
 ```java
 {
    "user_id":"eyJpdiI6Ildsd1wvMlB3eUczcDNISzkydDhKNnJRPT0iLCJ2YWx1ZSI6Im5oVW9iVXNiWVV5QkhHK0NScXZnbUE9PSIsIm1hYyI6ImE3Yjg1NmQ4YmRhYjg0M2JjMzZjNGYxNDdiNWZlNmY0OGY5ZjIwNDQ2YjhlYTM5N2M1NjRmNDFlMWY2MDUyNTMifQ==",

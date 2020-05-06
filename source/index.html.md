@@ -1405,15 +1405,14 @@ longitude          | String   | Obligatorio
 Además de lo anterior, este endpoint generará una notificación (Websocket) al CMS con la siguiente información del usuario que lanzó la notificación: <Enter>
 
 <br />
-```java
+<br />
 {
-   "user_id":"eyJpdiI6Ildsd1wvMlB3eUczcDNISzkydDhKNnJRPT0iLCJ2YWx1ZSI6Im5oVW9iVXNiWVV5QkhHK0NScXZnbUE9PSIsIm1hYyI6ImE3Yjg1NmQ4YmRhYjg0M2JjMzZjNGYxNDdiNWZlNmY0OGY5ZjIwNDQ2YjhlYTM5N2M1NjRmNDFlMWY2MDUyNTMifQ==",
+   "user_id":"eyJpdiI6...",
    "nombre":"nagdiel juuarez guerrerl",
    "latitude":"00.000000",
    "longitude":"00.000000",
    "alert_id":53
 }
-```
 
 ### Websocket
 Key                | Type     | Mandatory

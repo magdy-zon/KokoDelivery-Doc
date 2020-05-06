@@ -2199,6 +2199,46 @@
 <td>Obligatorio</td>
 </tr>
 </tbody></table>
+
+<p>Además de lo anterior, este endpoint generará una notificación (Websocket) al CMS con la siguiente información del usuario que lanza la notificación:
+<code>java
+{
+   &quot;user_id&quot;:&quot;eyJpdiI6Ildsd1wvMlB3eUczcDNISzkydDhKNnJRPT0iLCJ2YWx1ZSI6Im5oVW9iVXNiWVV5QkhHK0NScXZnbUE9PSIsIm1hYyI6ImE3Yjg1NmQ4YmRhYjg0M2JjMzZjNGYxNDdiNWZlNmY0OGY5ZjIwNDQ2YjhlYTM5N2M1NjRmNDFlMWY2MDUyNTMifQ==&quot;,
+   &quot;nombre&quot;:&quot;nagdiel juuarez guerrerl&quot;,
+   &quot;latitude&quot;:&quot;00.000000&quot;,
+   &quot;longitude&quot;:&quot;00.000000&quot;,
+   &quot;alert_id&quot;:53
+}
+</code></p>
+<h3 id='websocket'>Websocket</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>user_id</td>
+<td>String</td>
+<td>Obligatorio (Encrypted)</td>
+</tr>
+<tr>
+<td>nombre</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>String</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
 <h1 id='push-notifications'>Push notifications</h1><h2 id='nueva-push-desde-cms'>Nueva push desde CMS</h2>
 <blockquote>
 <p>Nueva push:</p>

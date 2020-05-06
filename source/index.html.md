@@ -1408,11 +1408,11 @@ Además de lo anterior, este endpoint generará una notificación (Websocket) al
 <br />
 ```
 {
-   "user_id":"eyJpdiI6...",<br />
-   "nombre":"magdiel juarez guerrero",<br />
-   "latitude":"00.000000",<br />
-   "longitude":"00.000000",<br />
-   "alert_id":53<br />
+   "user_id":"eyJpdiI6...", <br />
+   "nombre":"magdiel juarez guerrero", <br />
+   "latitude":"00.000000", <br />
+   "longitude":"00.000000", <br />
+   "alert_id":53 <br />
 }
 ```
 

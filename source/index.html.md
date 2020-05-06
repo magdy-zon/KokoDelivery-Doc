@@ -1406,13 +1406,15 @@ Además de lo anterior, este endpoint generará una notificación (Websocket) al
 
 <br />
 <br />
+```
 {
-   "user_id":"eyJpdiI6...",
-   "nombre":"nagdiel juuarez guerrerl",
-   "latitude":"00.000000",
-   "longitude":"00.000000",
-   "alert_id":53
+   "user_id":"eyJpdiI6...",<br />
+   "nombre":"magdiel juarez guerrero",<br />
+   "latitude":"00.000000",<br />
+   "longitude":"00.000000",<br />
+   "alert_id":53<br />
 }
+```
 
 ### Websocket
 Key                | Type     | Mandatory

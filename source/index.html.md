@@ -1428,6 +1428,69 @@ longitude          | String   | Obligatorio
 
 
 
+
+
+## Listado solicitudes SOS
+> Listado solicitude SOS:
+
+```java
+No requerido
+```
+```javascript
+{
+    "success": 1,
+    "message": "Se envío la solicitud móvil con éxito",
+    "data": [
+        {
+            "id": 1,
+            "fk_user_id": 2,
+            "address": "Address for the help request",
+            "created_at": "2020-03-11 16:45:47",
+            "updated_at": "2020-03-11 16:45:47",
+            "status": 1,
+            "latitude": "00.00000",
+            "longitude": "00.00000"
+        },
+        {
+            "id": 2,
+            "fk_user_id": 4,
+            "address": "10600 N De Anza Blvd, Cupertino, CA 95014, EE. UU.",
+            "created_at": "2020-04-20 17:41:51",
+            "updated_at": "2020-04-20 17:41:51",
+            "status": 1,
+            "latitude": "37.33036354",
+            "longitude": "-122.0309048"
+        },
+        ...
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+```
+Este endpoint lista todas las solicitudes SOS en el CMS.
+
+HTTP Request  | Name Endpoint       |  Endpoint
+--------------|---------------------|----------------------
+GET           | List SOS            | {{url}}/api/oauth/list_alert_sos
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+No requerido
+
+
+
+
+
+
+
 # Push notifications
 ##Nueva push desde CMS
 > Nueva push:

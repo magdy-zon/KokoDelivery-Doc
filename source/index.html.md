@@ -1363,8 +1363,8 @@ longitude             | String | Obligatorio
 ```java
 {
     "address": "Some Address",
-    "latitude": "00.000000",
-    "longitude": "00.000000",
+    "lat": "00.000000",
+    "long": "00.000000",
 }
 ```
 ```javascript
@@ -1397,8 +1397,8 @@ Authorization | Bearer eyJ0eXAiOiJKV1Q...
 Key                | Type     | Mandatory
 -------------------|----------|----------
 address            | String   | Opcional
-latitude           | String   | Obligatorio
-longitude          | String   | Obligatorio
+lat                | String   | Obligatorio
+long               | String   | Obligatorio
 
 
 
@@ -1498,7 +1498,7 @@ No requerido
 ```java
 {
     "type_alert": "A",
-    "fk_user_sender": "eyJpdiI6I..",
+    "fk_user_sender": "2",
     "title": "Title",
     "description": "Some description",
     "latitude": "00.000000",
@@ -1542,7 +1542,7 @@ Authorization | Bearer eyJ0eXAiOiJKV1Q...
 ### Body
 Key                | Type     | Mandatory
 -------------------|----------|----------
-user_id            | String   | Obligatorio (Encrypted)
+user_id            | String   | Obligatorio
 type_alert         | String   | Obligatorio
 title              | String   | Opcional
 description        | String   | Opcional

@@ -312,6 +312,9 @@
                   <li>
                     <a href="#solicitud-sos" class="toc-h2 toc-link" data-title="Solicitud SOS">Solicitud SOS</a>
                   </li>
+                  <li>
+                    <a href="#listado-solicitudes-sos" class="toc-h2 toc-link" data-title="Listado solicitudes SOS">Listado solicitudes SOS</a>
+                  </li>
               </ul>
           </li>
           <li>
@@ -2242,6 +2245,72 @@
 <td>Obligatorio</td>
 </tr>
 </tbody></table>
+<h2 id='listado-solicitudes-sos'>Listado solicitudes SOS</h2>
+<blockquote>
+<p>Listado solicitude SOS:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se envío la solicitud móvil con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"fk_user_id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"Address for the help request"</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-03-11 16:45:47"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-03-11 16:45:47"</span><span class="p">,</span>
+            <span class="s2">"status"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"00.00000"</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"00.00000"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">"id"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="s2">"fk_user_id"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+            <span class="s2">"address"</span><span class="p">:</span> <span class="s2">"10600 N De Anza Blvd, Cupertino, CA 95014, EE. UU."</span><span class="p">,</span>
+            <span class="s2">"created_at"</span><span class="p">:</span> <span class="s2">"2020-04-20 17:41:51"</span><span class="p">,</span>
+            <span class="s2">"updated_at"</span><span class="p">:</span> <span class="s2">"2020-04-20 17:41:51"</span><span class="p">,</span>
+            <span class="s2">"status"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+            <span class="s2">"latitude"</span><span class="p">:</span> <span class="s2">"37.33036354"</span><span class="p">,</span>
+            <span class="s2">"longitude"</span><span class="p">:</span> <span class="s2">"-122.0309048"</span>
+        <span class="p">},</span>
+        <span class="p">...</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint lista todas las solicitudes SOS en el CMS.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>GET</td>
+<td>List SOS</td>
+<td>{{url}}/api/oauth/list_alert_sos</td>
+</tr>
+</tbody></table>
+<h3 id='headers-20'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-20'>Body</h3>
+<p>No requerido</p>
 <h1 id='push-notifications'>Push notifications</h1><h2 id='nueva-push-desde-cms'>Nueva push desde CMS</h2>
 <blockquote>
 <p>Nueva push:</p>
@@ -2288,7 +2357,7 @@
 <td>{{url}}/api/oauth/new_push</td>
 </tr>
 </tbody></table>
-<h3 id='headers-20'>Headers</h3>
+<h3 id='headers-21'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2300,7 +2369,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-20'>Body</h3>
+<h3 id='body-21'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2403,7 +2472,7 @@
 <td>{{url}}/api/oauth/alerts</td>
 </tr>
 </tbody></table>
-<h3 id='headers-21'>Headers</h3>
+<h3 id='headers-22'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2415,7 +2484,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-21'>Body</h3>
+<h3 id='body-22'>Body</h3>
 <p>No requerido</p>
 <h2 id='push-detail-cms'>Push detail CMS</h2>
 <blockquote>
@@ -2475,7 +2544,7 @@
 <td>{{url}}/api/oauth/alerts/{alert_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-22'>Headers</h3>
+<h3 id='headers-23'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2487,7 +2556,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-22'>Body</h3>
+<h3 id='body-23'>Body</h3>
 <p>No requerido</p>
 <h1 id='alerts-app'>Alerts APP</h1><h2 id='alerts-list'>Alerts list</h2>
 <blockquote>
@@ -2533,7 +2602,7 @@
 <td>{{url}}/api/oauth/mobile_alerts</td>
 </tr>
 </tbody></table>
-<h3 id='headers-23'>Headers</h3>
+<h3 id='headers-24'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2545,7 +2614,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-23'>Body</h3>
+<h3 id='body-24'>Body</h3>
 <p>No requerido</p>
 <h2 id='alert-modify-status'>Alert modify status</h2>
 <blockquote>
@@ -2578,7 +2647,7 @@
 <td>{{url}}/api/oauth/disable_mobilealert/{alert_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-24'>Headers</h3>
+<h3 id='headers-25'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2590,7 +2659,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-24'>Body</h3>
+<h3 id='body-25'>Body</h3>
 <p>No requerido</p>
 <h1 id='staff'>Staff</h1><h2 id='staff-list'>Staff list</h2>
 <blockquote>
@@ -2623,7 +2692,7 @@
 <td>{{url}}/api/oauth/staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-25'>Headers</h3>
+<h3 id='headers-26'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2635,7 +2704,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-25'>Body</h3>
+<h3 id='body-26'>Body</h3>
 <p>No requerido</p>
 <h2 id='staff-creation'>Staff creation</h2>
 <blockquote>
@@ -2675,7 +2744,7 @@
 <td>{{url}}/api/oauth/staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-26'>Headers</h3>
+<h3 id='headers-27'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2687,7 +2756,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-26'>Body</h3>
+<h3 id='body-27'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2764,7 +2833,7 @@
 <td>{{url}}/api/oauth/update_staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-27'>Headers</h3>
+<h3 id='headers-28'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2776,7 +2845,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-27'>Body</h3>
+<h3 id='body-28'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2851,7 +2920,7 @@
 <td>{{url}}/api/oauth/staff/{encrypted_staff_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-28'>Headers</h3>
+<h3 id='headers-29'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2863,7 +2932,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-28'>Body</h3>
+<h3 id='body-29'>Body</h3>
 <p>No requerido</p>
 
       </div>

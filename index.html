@@ -313,6 +313,9 @@
                     <a href="#solicitud-sos" class="toc-h2 toc-link" data-title="Solicitud SOS">Solicitud SOS</a>
                   </li>
                   <li>
+                    <a href="#editar-estado-solicitud-sos" class="toc-h2 toc-link" data-title="Editar estado solicitud SOS">Editar estado solicitud SOS</a>
+                  </li>
+                  <li>
                     <a href="#listado-solicitudes-sos" class="toc-h2 toc-link" data-title="Listado solicitudes SOS">Listado solicitudes SOS</a>
                   </li>
               </ul>
@@ -2245,6 +2248,78 @@
 <td>Obligatorio</td>
 </tr>
 </tbody></table>
+<h2 id='editar-estado-solicitud-sos'>Editar estado solicitud SOS</h2>
+<blockquote>
+<p>Editar estado solicitud SOS:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="o">{</span>
+    <span class="s">"alert_id"</span><span class="o">:</span> <span class="mi">132</span><span class="o">,</span>
+    <span class="s">"status"</span><span class="o">:</span> <span class="mi">0</span>
+<span class="o">}</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se actualizó la solicitud móvil con éxito"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No existe la alerta seleccionada"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+
+</code></pre>
+<p>Este endpoint edita el estatus de una solicitud SOS desde CMS.</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>POST</td>
+<td>Alert SOS edit</td>
+<td>{{url}}/api/oauth/status_alert_sos</td>
+</tr>
+</tbody></table>
+<h3 id='headers-20'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-20'>Body</h3><h3 id='body-21'>Body</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Type</th>
+<th>Mandatory</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>alert_id</td>
+<td>int</td>
+<td>Obligatorio</td>
+</tr>
+<tr>
+<td>status</td>
+<td>Int</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
 <h2 id='listado-solicitudes-sos'>Listado solicitudes SOS</h2>
 <blockquote>
 <p>Listado solicitude SOS:</p>
@@ -2297,7 +2372,7 @@
 <td>{{url}}/api/oauth/list_alert_sos</td>
 </tr>
 </tbody></table>
-<h3 id='headers-20'>Headers</h3>
+<h3 id='headers-21'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2309,7 +2384,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-20'>Body</h3>
+<h3 id='body-22'>Body</h3>
 <p>No requerido</p>
 <h1 id='push-notifications'>Push notifications</h1><h2 id='nueva-push-desde-cms'>Nueva push desde CMS</h2>
 <blockquote>
@@ -2357,7 +2432,7 @@
 <td>{{url}}/api/oauth/new_push</td>
 </tr>
 </tbody></table>
-<h3 id='headers-21'>Headers</h3>
+<h3 id='headers-22'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2369,7 +2444,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-21'>Body</h3>
+<h3 id='body-23'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2472,7 +2547,7 @@
 <td>{{url}}/api/oauth/alerts</td>
 </tr>
 </tbody></table>
-<h3 id='headers-22'>Headers</h3>
+<h3 id='headers-23'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2484,7 +2559,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-22'>Body</h3>
+<h3 id='body-24'>Body</h3>
 <p>No requerido</p>
 <h2 id='push-detail-cms'>Push detail CMS</h2>
 <blockquote>
@@ -2544,7 +2619,7 @@
 <td>{{url}}/api/oauth/alerts/{alert_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-23'>Headers</h3>
+<h3 id='headers-24'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2556,7 +2631,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-23'>Body</h3>
+<h3 id='body-25'>Body</h3>
 <p>No requerido</p>
 <h1 id='alerts-app'>Alerts APP</h1><h2 id='alerts-list'>Alerts list</h2>
 <blockquote>
@@ -2602,7 +2677,7 @@
 <td>{{url}}/api/oauth/mobile_alerts</td>
 </tr>
 </tbody></table>
-<h3 id='headers-24'>Headers</h3>
+<h3 id='headers-25'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2614,7 +2689,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-24'>Body</h3>
+<h3 id='body-26'>Body</h3>
 <p>No requerido</p>
 <h2 id='alert-modify-status'>Alert modify status</h2>
 <blockquote>
@@ -2647,7 +2722,7 @@
 <td>{{url}}/api/oauth/disable_mobilealert/{alert_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-25'>Headers</h3>
+<h3 id='headers-26'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2659,7 +2734,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-25'>Body</h3>
+<h3 id='body-27'>Body</h3>
 <p>No requerido</p>
 <h1 id='staff'>Staff</h1><h2 id='staff-list'>Staff list</h2>
 <blockquote>
@@ -2692,7 +2767,7 @@
 <td>{{url}}/api/oauth/staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-26'>Headers</h3>
+<h3 id='headers-27'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2704,7 +2779,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-26'>Body</h3>
+<h3 id='body-28'>Body</h3>
 <p>No requerido</p>
 <h2 id='staff-creation'>Staff creation</h2>
 <blockquote>
@@ -2744,7 +2819,7 @@
 <td>{{url}}/api/oauth/staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-27'>Headers</h3>
+<h3 id='headers-28'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2756,7 +2831,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-27'>Body</h3>
+<h3 id='body-29'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2833,7 +2908,7 @@
 <td>{{url}}/api/oauth/update_staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-28'>Headers</h3>
+<h3 id='headers-29'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2845,7 +2920,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-28'>Body</h3>
+<h3 id='body-30'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2920,7 +2995,7 @@
 <td>{{url}}/api/oauth/staff/{encrypted_staff_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-29'>Headers</h3>
+<h3 id='headers-30'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2932,7 +3007,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-29'>Body</h3>
+<h3 id='body-31'>Body</h3>
 <p>No requerido</p>
 
       </div>

@@ -1397,8 +1397,8 @@ Authorization | Bearer eyJ0eXAiOiJKV1Q...
 Key                | Type     | Mandatory
 -------------------|----------|----------
 address            | String   | Opcional
-lat                | String   | Obligatorio
-long               | String   | Obligatorio
+latitude           | String   | Obligatorio
+longitude          | String   | Obligatorio
 
 
 
@@ -1433,8 +1433,7 @@ longitude          | String   | Obligatorio
 > Editar estado solicitud SOS:
 
 
-## Estatus de solicitudes SOS
-
+### Estatus de solicitudes SOS
 ID | Estatus
 ---|----------------------
 2  | Se emitió alerta, se atendió y se finalizó
@@ -1481,7 +1480,6 @@ Key           | Value
 --------------|----------------------------
 Authorization | Bearer eyJ0eXAiOiJKV1Q...
 
-### Body
 ### Body
 Key                | Type     | Mandatory
 -------------------|----------|----------

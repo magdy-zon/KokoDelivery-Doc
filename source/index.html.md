@@ -1429,6 +1429,59 @@ longitude          | String   | Obligatorio
 
 
 
+## Editar estado solicitud SOS
+> Editar estado solicitud SOS:
+
+```java
+{
+    "alert_id": 132,
+    "status": 0
+}
+```
+```javascript
+{
+    "success": 1,
+    "message": "Se actualizó la solicitud móvil con éxito",
+    "data": null
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+
+{
+    "success": 0,
+    "message": "No existe la alerta seleccionada",
+    "data": []
+}
+
+```
+Este endpoint edita el estatus de una solicitud SOS desde CMS.
+
+HTTP Request  | Name Endpoint       |  Endpoint
+--------------|---------------------|----------------------
+POST          | Alert SOS edit      | {{url}}/api/oauth/status_alert_sos
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+### Body
+Key                | Type     | Mandatory
+-------------------|----------|----------
+alert_id           | int      | Obligatorio
+status             | Int      | Obligatorio
+
+
+
+
+
+
 
 ## Listado solicitudes SOS
 > Listado solicitude SOS:

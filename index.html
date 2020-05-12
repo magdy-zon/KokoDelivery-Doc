@@ -316,6 +316,9 @@
                     <a href="#editar-estado-solicitud-sos" class="toc-h2 toc-link" data-title="Editar estado solicitud SOS">Editar estado solicitud SOS</a>
                   </li>
                   <li>
+                    <a href="#estatus-de-solicitudes-sos" class="toc-h2 toc-link" data-title="Estatus de solicitudes SOS">Estatus de solicitudes SOS</a>
+                  </li>
+                  <li>
                     <a href="#listado-solicitudes-sos" class="toc-h2 toc-link" data-title="Listado solicitudes SOS">Listado solicitudes SOS</a>
                   </li>
               </ul>
@@ -2252,6 +2255,26 @@
 <blockquote>
 <p>Editar estado solicitud SOS:</p>
 </blockquote>
+<h2 id='estatus-de-solicitudes-sos'>Estatus de solicitudes SOS</h2>
+<table><thead>
+<tr>
+<th>ID</th>
+<th>Estatus</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>2</td>
+<td>Se emitió alerta, se atendió y se finalizó</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Se emitió alerta y se está atendiendo</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Se emitió alerta y no se ha atendido</td>
+</tr>
+</tbody></table>
 <pre class="highlight java tab-java"><code><span class="o">{</span>
     <span class="s">"alert_id"</span><span class="o">:</span> <span class="mi">132</span><span class="o">,</span>
     <span class="s">"status"</span><span class="o">:</span> <span class="mi">0</span>

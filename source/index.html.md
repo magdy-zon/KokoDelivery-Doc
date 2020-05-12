@@ -1432,6 +1432,17 @@ longitude          | String   | Obligatorio
 ## Editar estado solicitud SOS
 > Editar estado solicitud SOS:
 
+
+## Estatus de solicitudes SOS
+
+ID | Estatus
+---|----------------------
+2  | Se emitió alerta, se atendió y se finalizó
+1  | Se emitió alerta y se está atendiendo
+0  | Se emitió alerta y no se ha atendido
+
+
+
 ```java
 {
     "alert_id": 132,

@@ -1491,6 +1491,65 @@ status             | Int      | Obligatorio
 
 
 
+## Response Solicitud SOS
+> Response Solicitud SOS:
+
+```java
+{
+    "alert_id": 32,
+    "response": 1
+}
+```
+```javascript
+
+{
+      "success": 1,
+      "message": "Se actualizó el estatus de esta alerta",
+      "data": null
+  }
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+
+{
+    "success": 0,
+    "message": "Falla al actualizar el estatus de esta alerta",
+    "data": []
+}
+
+{
+    "success": 0,
+    "message": "No existe la alerta seleccionada",
+    "data": []
+}
+```
+Este endpoint manda una solicitud SOS después de que el usuario dice que sí necesita ayuda en la app.
+
+HTTP Request  | Name Endpoint       |  Endpoint
+--------------|---------------------|----------------------
+POST          | Response push       | {{url}}/api/oauth/response_push
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+Key                | Type     | Mandatory
+-------------------|----------|----------
+alert_id           | Int      | Obligatory
+response           | Boolean  | Obligatory
+
+
+
+
+
+
+
 
 ## Listado solicitudes SOS
 > Listado solicitude SOS:

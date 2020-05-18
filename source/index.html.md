@@ -1184,6 +1184,150 @@ user_id               | String | Obligatorio (Encrypted)
 
 
 
+
+
+## Obtener código de activación
+>Obtener código de activación:
+
+```java
+{
+    "user_id":3
+}
+```
+```javascript
+{
+    "success": 1,
+    "message": "Información de código",
+    "data": {
+        "code": "CASWLSYNEF",
+        "quantity": 10
+    }
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+{
+    "success": 0,
+    "message": "No cuentas con permisos suficientes",
+    "data": null
+}
+
+{
+    "success": 0,
+    "message": "No existe el usuario",
+    "data": null
+}
+
+{
+    "success": 0,
+    "message": "No hay códigos asociados",
+    "data": null
+}
+{
+    "success": 0,
+    "message": "Primero se necesita eliminar otro usuario secundario",
+    "data": null
+}
+```
+
+Este endpoint devolverá el código de activación de un usuario y la cantidad de usuarios asignada si tiene
+
+HTTP Request  | Name Endpoint              |  Endpoint
+--------------|----------------------------|----------------------
+POST          | Get Code Invitation        | {{url}}/api/oauth/get_code
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+Key                   | Type   | Mandatory
+----------------------|--------|----------
+user_id               | String | Obligatorio
+
+
+
+
+
+
+
+
+## Actualizar código de activación
+>Actualizar código de activación:
+
+```java
+{
+    "user_id":3,
+    "quantity": 4
+}
+```
+```javascript
+{
+    "success": 1,
+    "message": "Actualización de usuarios secundarios",
+    "data": null
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+{
+    "success": 0,
+    "message": "No cuentas con permisos suficientes",
+    "data": null
+}
+
+{
+    "success": 0,
+    "message": "No existe el usuario",
+    "data": null
+}
+
+{
+    "success": 0,
+    "message": "No hay códigos asociados",
+    "data": null
+}
+{
+    "success": 0,
+    "message": "Primero se necesita eliminar otro usuario secundario",
+    "data": null
+}
+```
+
+Este endpoint actualiza la cantidad de usuarios asignados
+
+HTTP Request  | Name Endpoint              |  Endpoint
+--------------|----------------------------|----------------------
+POST          | Update Code Invitation     | {{url}}/api/oauth/update_code_qtt
+
+### Headers
+Key           | Value
+--------------|----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+Key                   | Type   | Mandatory
+----------------------|--------|----------
+user_id               | Int    | Obligatorio
+quantity              | Int    | Obligatorio
+
+
+
+
+
+
+
+
+
 #Ubicaciones
 ## Última ubicación
 >Última ubicación:

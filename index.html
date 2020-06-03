@@ -3098,6 +3098,11 @@
     <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
     <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
 <span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Este correo ya ha sido registrado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
 </code></pre>
 <p>Este endpoint crea un nuevo usuario del equipo de staff en CMS.</p>
 
@@ -3165,6 +3170,22 @@
 <td>Obligatorio</td>
 </tr>
 </tbody></table>
+<h3 id='value-cat_type_user_id'>Value cat_type_user_id</h3>
+<table><thead>
+<tr>
+<th>Refers</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Moderador</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>4</td>
+</tr>
+</tbody></table>
 <h2 id='staff-update'>Staff update</h2>
 <blockquote>
 <p>Staff update:</p>
@@ -3175,7 +3196,7 @@
     <span class="s">"first_lastname"</span><span class="o">:</span> <span class="s">"Lastname 1"</span><span class="o">,</span>
     <span class="s">"second_lastname"</span><span class="o">:</span> <span class="s">"Lastname 2"</span><span class="o">,</span>
     <span class="s">"email"</span><span class="o">:</span> <span class="s">"email@xample.com"</span><span class="o">,</span>
-    <span class="s">"type_user_id"</span><span class="o">:</span> <span class="mi">3</span>
+    <span class="s">"cat_type_user_id"</span><span class="o">:</span> <span class="mi">3</span>
 <span class="o">}</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
     <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -3256,7 +3277,23 @@
 <tr>
 <td>cat_type_user_id</td>
 <td>Int</td>
-<td>Opcional</td>
+<td>Obligatorio</td>
+</tr>
+</tbody></table>
+<h3 id='value-cat_type_user_id-2'>Value cat_type_user_id</h3>
+<table><thead>
+<tr>
+<th>Refers</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Moderador</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Admin</td>
+<td>4</td>
 </tr>
 </tbody></table>
 <h2 id='staff-delete'>Staff delete</h2>

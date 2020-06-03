@@ -2136,6 +2136,11 @@ No requerido
     "message": "No estás logueado",
     "data": []
 }
+{
+    "success": 0,
+    "message": "Este correo ya ha sido registrado",
+    "data": null
+}
 ```
 
 Este endpoint crea un nuevo usuario del equipo de staff en CMS.
@@ -2159,7 +2164,11 @@ email               | String   | Obligatorio
 password            | String   | Obligatorio
 cat_type_user_id    | Int      | Obligatorio
 
-
+### Value cat_type_user_id
+Refers              | Value   
+--------------------|---------
+Moderador           | 3
+Admin               | 4   
 
 
 
@@ -2175,7 +2184,7 @@ cat_type_user_id    | Int      | Obligatorio
     "first_lastname": "Lastname 1",
     "second_lastname": "Lastname 2",
     "email": "email@xample.com",
-    "type_user_id": 3
+    "cat_type_user_id": 3
 }
 ```
 ```javascript
@@ -2213,8 +2222,13 @@ first_lastname      | String   | Opcional
 second_lastname     | String   | Opcional
 email               | String   | Opcional
 password            | String   | Opcional
-cat_type_user_id    | Int      | Opcional
+cat_type_user_id    | Int      | Obligatorio
 
+### Value cat_type_user_id
+Refers              | Value   
+--------------------|---------
+Moderador           | 3
+Admin               | 4   
 
 
 

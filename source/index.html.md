@@ -713,7 +713,7 @@ Este endpoint muestra la información básica de un usuario respecto de su ID
 
 HTTP Request  | Name Endpoint | Endpoint
 --------------|---------------|---------------------
-GET           | Show profile  | {{url}}/api/oauth/users/{encrypted_user_id}
+GET           | Show profile  | {{url}}/api/oauth/users/{user_id}
 
 ### Headers
 Key           | Value
@@ -860,6 +860,63 @@ No requerido.
 
 
 
+## Eliminar usuarios secundarios
+>Eliminar usuarios secundarios:
+
+```java
+// No aplica
+```
+```javascript
+{
+    "success": 1,
+    "message": "Se ha eliminado este usuario",
+    "data": null
+}
+```
+```csharp
+{
+    "success": 0,
+    "message": "No estás logueado",
+    "data": []
+}
+{
+    "success": 0,
+    "message": "El usuario no existe",
+    "data": null
+}
+{
+    "success": 0,
+    "message": "No tienes permisos para realizar esta acción",
+    "data": null
+}
+{
+    "success": 0,
+    "message": "Hubo un error al eliminar al usuario",
+    "data": null
+}
+```
+Este endpoint elimina un usuario secundario utilizando su ID
+
+
+HTTP Request  | Name Endpoint | Endpoint
+--------------|---------------|---------------------
+DELETE        | Delete user   | {{url}}/api/oauth/users/{user_id}
+
+### Headers
+Key           | Value
+--------------|-----------------------------
+Authorization | Bearer eyJ0eXAiOiJKV1Q...
+
+### Body
+No requerido.
+
+
+
+
+
+
+
+
 ## Editar usuario
 >Editar usuario:
 
@@ -974,7 +1031,7 @@ Authorization | Bearer eyJ0eXAiOiJKV1Q...
 ### Body
 Key                   | Type   | Mandatory
 ----------------------|--------|----------
-user_id               | String | Obligatorio (Encrypted)
+user_id               | String | Obligatorio
 
 
 

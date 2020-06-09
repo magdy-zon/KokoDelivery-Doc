@@ -279,6 +279,9 @@
                     <a href="#listado-usuarios-primarios" class="toc-h2 toc-link" data-title="Listado usuarios primarios">Listado usuarios primarios</a>
                   </li>
                   <li>
+                    <a href="#eliminar-usuarios-secundarios" class="toc-h2 toc-link" data-title="Eliminar usuarios secundarios">Eliminar usuarios secundarios</a>
+                  </li>
+                  <li>
                     <a href="#editar-usuario" class="toc-h2 toc-link" data-title="Editar usuario">Editar usuario</a>
                   </li>
                   <li>
@@ -1333,7 +1336,7 @@
 <tr>
 <td>GET</td>
 <td>Show profile</td>
-<td>{{url}}/api/oauth/users/{encrypted_user_id}</td>
+<td>{{url}}/api/oauth/users/{user_id}</td>
 </tr>
 </tbody></table>
 <h3 id='headers-10'>Headers</h3>
@@ -1488,6 +1491,66 @@
 </tbody></table>
 <h3 id='body-11'>Body</h3>
 <p>No requerido.</p>
+<h2 id='eliminar-usuarios-secundarios'>Eliminar usuarios secundarios</h2>
+<blockquote>
+<p>Eliminar usuarios secundarios:</p>
+</blockquote>
+<pre class="highlight java tab-java"><code><span class="c1">// No aplica</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
+    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se ha eliminado este usuario"</span><span class="p">,</span>
+    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"El usuario no existe"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No tienes permisos para realizar esta acción"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+<span class="p">{</span>
+    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
+    <span class="s">"message"</span><span class="p">:</span> <span class="s">"Hubo un error al eliminar al usuario"</span><span class="p">,</span>
+    <span class="s">"data"</span><span class="p">:</span> <span class="k">null</span>
+<span class="p">}</span>
+</code></pre>
+<p>Este endpoint elimina un usuario secundario utilizando su ID</p>
+
+<table><thead>
+<tr>
+<th>HTTP Request</th>
+<th>Name Endpoint</th>
+<th>Endpoint</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>DELETE</td>
+<td>Delete user</td>
+<td>{{url}}/api/oauth/users/{user_id}</td>
+</tr>
+</tbody></table>
+<h3 id='headers-12'>Headers</h3>
+<table><thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Authorization</td>
+<td>Bearer eyJ0eXAiOiJKV1Q...</td>
+</tr>
+</tbody></table>
+<h3 id='body-12'>Body</h3>
+<p>No requerido.</p>
 <h2 id='editar-usuario'>Editar usuario</h2>
 <blockquote>
 <p>Editar usuario:</p>
@@ -1541,7 +1604,7 @@
 <td>{{url}}/api/oauth/update_user</td>
 </tr>
 </tbody></table>
-<h3 id='headers-12'>Headers</h3>
+<h3 id='headers-13'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1553,7 +1616,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-12'>Body</h3>
+<h3 id='body-13'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1655,7 +1718,7 @@
 <td>{{url}}/api/oauth/disable_user</td>
 </tr>
 </tbody></table>
-<h3 id='headers-13'>Headers</h3>
+<h3 id='headers-14'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1667,7 +1730,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-13'>Body</h3>
+<h3 id='body-14'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1678,7 +1741,7 @@
 <tr>
 <td>user_id</td>
 <td>String</td>
-<td>Obligatorio (Encrypted)</td>
+<td>Obligatorio</td>
 </tr>
 </tbody></table>
 <h2 id='detalle-de-usuario'>Detalle de usuario</h2>
@@ -1814,7 +1877,7 @@
 <td>{{url}}/api/oauth/detail_primary</td>
 </tr>
 </tbody></table>
-<h3 id='headers-14'>Headers</h3>
+<h3 id='headers-15'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1826,7 +1889,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-14'>Body</h3>
+<h3 id='body-15'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1886,7 +1949,7 @@
 <td>{{url}}/api/oauth/emergency_contact</td>
 </tr>
 </tbody></table>
-<h3 id='headers-15'>Headers</h3>
+<h3 id='headers-16'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1898,7 +1961,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-15'>Body</h3>
+<h3 id='body-16'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1970,7 +2033,7 @@
 <td>{{url}}/api/oauth/get_code</td>
 </tr>
 </tbody></table>
-<h3 id='headers-16'>Headers</h3>
+<h3 id='headers-17'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -1982,7 +2045,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-16'>Body</h3>
+<h3 id='body-17'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2052,7 +2115,7 @@
 <td>{{url}}/api/oauth/update_code_qtt</td>
 </tr>
 </tbody></table>
-<h3 id='headers-17'>Headers</h3>
+<h3 id='headers-18'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2064,7 +2127,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-17'>Body</h3>
+<h3 id='body-18'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2125,7 +2188,7 @@
 <td>{{url}}/api/oauth/last_location</td>
 </tr>
 </tbody></table>
-<h3 id='headers-18'>Headers</h3>
+<h3 id='headers-19'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2137,7 +2200,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-18'>Body</h3>
+<h3 id='body-19'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2215,7 +2278,7 @@
 <td>{{url}}/api/oauth/history_location</td>
 </tr>
 </tbody></table>
-<h3 id='headers-19'>Headers</h3>
+<h3 id='headers-20'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2227,7 +2290,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-19'>Body</h3>
+<h3 id='body-20'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2277,7 +2340,7 @@
 <td>{{url}}/api/oauth/update_location</td>
 </tr>
 </tbody></table>
-<h3 id='headers-20'>Headers</h3>
+<h3 id='headers-21'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2289,7 +2352,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-20'>Body</h3>
+<h3 id='body-21'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2349,7 +2412,7 @@
 <td>{{url}}/api/oauth/new_alert_sos</td>
 </tr>
 </tbody></table>
-<h3 id='headers-21'>Headers</h3>
+<h3 id='headers-22'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2361,7 +2424,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-21'>Body</h3>
+<h3 id='body-22'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2489,7 +2552,7 @@
 <td>{{url}}/api/oauth/status_alert_sos</td>
 </tr>
 </tbody></table>
-<h3 id='headers-22'>Headers</h3>
+<h3 id='headers-23'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2501,7 +2564,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-22'>Body</h3>
+<h3 id='body-23'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2567,7 +2630,7 @@
 <td>{{url}}/api/oauth/response_push</td>
 </tr>
 </tbody></table>
-<h3 id='headers-23'>Headers</h3>
+<h3 id='headers-24'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2579,7 +2642,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-23'>Body</h3>
+<h3 id='body-24'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2667,7 +2730,7 @@
 <td>{{url}}/api/oauth/list_alert_sos</td>
 </tr>
 </tbody></table>
-<h3 id='headers-24'>Headers</h3>
+<h3 id='headers-25'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2679,7 +2742,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-24'>Body</h3>
+<h3 id='body-25'>Body</h3>
 <p>No requerido</p>
 <h1 id='push-notifications'>Push notifications</h1><h2 id='nueva-push-desde-cms'>Nueva push desde CMS</h2>
 <blockquote>
@@ -2727,7 +2790,7 @@
 <td>{{url}}/api/oauth/new_push</td>
 </tr>
 </tbody></table>
-<h3 id='headers-25'>Headers</h3>
+<h3 id='headers-26'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2739,7 +2802,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-25'>Body</h3>
+<h3 id='body-26'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2842,7 +2905,7 @@
 <td>{{url}}/api/oauth/alerts</td>
 </tr>
 </tbody></table>
-<h3 id='headers-26'>Headers</h3>
+<h3 id='headers-27'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2854,7 +2917,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-26'>Body</h3>
+<h3 id='body-27'>Body</h3>
 <p>No requerido</p>
 <h2 id='push-detail-cms'>Push detail CMS</h2>
 <blockquote>
@@ -2914,7 +2977,7 @@
 <td>{{url}}/api/oauth/alerts/{alert_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-27'>Headers</h3>
+<h3 id='headers-28'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2926,7 +2989,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-27'>Body</h3>
+<h3 id='body-28'>Body</h3>
 <p>No requerido</p>
 <h1 id='alerts-app'>Alerts APP</h1><h2 id='alerts-list'>Alerts list</h2>
 <blockquote>
@@ -2972,7 +3035,7 @@
 <td>{{url}}/api/oauth/mobile_alerts</td>
 </tr>
 </tbody></table>
-<h3 id='headers-28'>Headers</h3>
+<h3 id='headers-29'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -2984,7 +3047,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-28'>Body</h3>
+<h3 id='body-29'>Body</h3>
 <p>No requerido</p>
 <h2 id='alert-modify-status'>Alert modify status</h2>
 <blockquote>
@@ -3017,7 +3080,7 @@
 <td>{{url}}/api/oauth/disable_mobilealert/{alert_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-29'>Headers</h3>
+<h3 id='headers-30'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3029,7 +3092,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-29'>Body</h3>
+<h3 id='body-30'>Body</h3>
 <p>No requerido</p>
 <h1 id='staff'>Staff</h1><h2 id='staff-list'>Staff list</h2>
 <blockquote>
@@ -3062,7 +3125,7 @@
 <td>{{url}}/api/oauth/staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-30'>Headers</h3>
+<h3 id='headers-31'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3074,7 +3137,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-30'>Body</h3>
+<h3 id='body-31'>Body</h3>
 <p>No requerido</p>
 <h2 id='staff-creation'>Staff creation</h2>
 <blockquote>
@@ -3119,7 +3182,7 @@
 <td>{{url}}/api/oauth/staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-31'>Headers</h3>
+<h3 id='headers-32'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3131,7 +3194,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-31'>Body</h3>
+<h3 id='body-32'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3224,7 +3287,7 @@
 <td>{{url}}/api/oauth/update_staff</td>
 </tr>
 </tbody></table>
-<h3 id='headers-32'>Headers</h3>
+<h3 id='headers-33'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3236,7 +3299,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-32'>Body</h3>
+<h3 id='body-33'>Body</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3327,7 +3390,7 @@
 <td>{{url}}/api/oauth/staff/{encrypted_staff_id}</td>
 </tr>
 </tbody></table>
-<h3 id='headers-33'>Headers</h3>
+<h3 id='headers-34'>Headers</h3>
 <table><thead>
 <tr>
 <th>Key</th>
@@ -3339,7 +3402,7 @@
 <td>Bearer eyJ0eXAiOiJKV1Q...</td>
 </tr>
 </tbody></table>
-<h3 id='body-33'>Body</h3>
+<h3 id='body-34'>Body</h3>
 <p>No requerido</p>
 
       </div>

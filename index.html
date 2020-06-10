@@ -369,9 +369,6 @@
                   <li>
                     <a href="#staff-update" class="toc-h2 toc-link" data-title="Staff update">Staff update</a>
                   </li>
-                  <li>
-                    <a href="#staff-delete" class="toc-h2 toc-link" data-title="Staff delete">Staff delete</a>
-                  </li>
               </ul>
           </li>
       </ul>
@@ -3359,51 +3356,6 @@
 <td>4</td>
 </tr>
 </tbody></table>
-<h2 id='staff-delete'>Staff delete</h2>
-<blockquote>
-<p>Staff delete:</p>
-</blockquote>
-<pre class="highlight java tab-java"><code><span class="n">No</span> <span class="n">requerido</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="p">{</span>
-    <span class="s2">"success"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">"message"</span><span class="p">:</span> <span class="s2">"Se ha eliminado el personal del staff"</span><span class="p">,</span>
-    <span class="s2">"data"</span><span class="p">:</span> <span class="kc">null</span>
-<span class="p">}</span>
-</code></pre><pre class="highlight csharp tab-csharp"><code><span class="p">{</span>
-    <span class="s">"success"</span><span class="p">:</span> <span class="m">0</span><span class="p">,</span>
-    <span class="s">"message"</span><span class="p">:</span> <span class="s">"No estás logueado"</span><span class="p">,</span>
-    <span class="s">"data"</span><span class="p">:</span> <span class="p">[]</span>
-<span class="p">}</span>
-</code></pre>
-<p>Este endpoint elimina un usuario del equipo de staff desde CMS</p>
-
-<table><thead>
-<tr>
-<th>HTTP Request</th>
-<th>Name Endpoint</th>
-<th>Endpoint</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>DELETE</td>
-<td>Staff Delete</td>
-<td>{{url}}/api/oauth/staff/{encrypted_staff_id}</td>
-</tr>
-</tbody></table>
-<h3 id='headers-34'>Headers</h3>
-<table><thead>
-<tr>
-<th>Key</th>
-<th>Value</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>Authorization</td>
-<td>Bearer eyJ0eXAiOiJKV1Q...</td>
-</tr>
-</tbody></table>
-<h3 id='body-34'>Body</h3>
-<p>No requerido</p>
 
       </div>
       <div class="dark-box">

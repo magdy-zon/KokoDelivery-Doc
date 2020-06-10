@@ -7,45 +7,25 @@ language_tabs:
   - csharp: Error Response
 
 toc_footers:
-  - <a href='http://kokonutstudio.com/'>CAS Miura</a>
+  - <a href='http://kokonutstudio.com/'>Koko Delivery</a>
 
 search: true
 ---
 
 
 
-# CAS Miura
+# Koko Delivery
 
-Link al código fuente: [CAS Miura](https://github.com/KokonutStudioRepository/CAS_CMS_Backend).
+Link al código fuente: [Koko Delivery](https://github.com/KokonutStudioRepository/KokoDelivery_Backend).
 
 ## URL
 
 Ambiente        | Value
 ----------------|----------------------------------------
-Desarrollo      | https://cas-dev-api.kokonutstudio.com
-QA              | https://cas-qa-api.kokonutstudio.com
+Desarrollo      | NO DISPONIBLE AÚN
+QA              | NO DISPONIBLE AÚN
 Pruebas Cliente | NO DISPONIBLE AÚN
 Producción      | NO DISPONIBLE AÚN
-
-
-## Estatus de usuarios
-Se muestra listado de los estatus disponibles para un usuario.
-
-ID | Estatus
----|----------------------
-1  | Activo
-0  | Desactivado
-
-
-## Tipo de usuarios
-Se muestra listado de los tipos de usuarios.
-
-id  | Rol
-----|--------------------
- 1  | Usuario principal App
- 2  | Usuario secundario App
- 3  | Moderador CMS
- 4  | Admin CMS
 
 
 
